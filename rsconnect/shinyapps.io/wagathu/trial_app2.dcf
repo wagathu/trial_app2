@@ -4,8 +4,8 @@ username: wagathu
 account: wagathu
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 14146722
-bundleId: 9884545
+appId: 14147877
+bundleId: 9885069
 url: https://wagathu.shinyapps.io/trial_app2/
 version: 1
 asMultiple: FALSE
