@@ -14,7 +14,7 @@ ui <- fluidPage(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
 output$my_plot <- renderHighchart({
-    dd |> 
+    data |> 
         hchart(
             hcaes(
                 x = date,
