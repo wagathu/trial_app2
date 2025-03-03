@@ -17,8 +17,8 @@ jobs:
           use-public-rspm: true
       - name: Install dependencies
         run: |
-          install.packages(c("data.table", "dplyr", "googlesheets4",
-          "stringr", "lubridate", "rsconnect", "pacman"))          
+          install.packages(c("pacman", "data.table", "dplyr", "googlesheets4",
+          "stringr", "lubridate"))          
         shell: Rscript {0}
       - name: Update data
         run: |
