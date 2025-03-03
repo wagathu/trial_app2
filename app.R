@@ -1,6 +1,5 @@
 
 source("global.R")
-googlesheets4::gs4_auth(email = "brian.njuguna@cema.africa", cache = ".secrets")
 ui <- fluidPage(
     fluidRow(
         h2("Trial app", style = "color:#27AAE1; text-align:center"),
