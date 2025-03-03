@@ -1,0 +1,12 @@
+name: trial_app2
+title: trial_app2
+username: wagathu
+account: wagathu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14146722
+bundleId: 9884545
+url: https://wagathu.shinyapps.io/trial_app2/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
