@@ -4,4 +4,4 @@ rsconnect::setAccountInfo(name = "wagathu",
                           secret = "6W+Dln3QZqEJ3XW2AGjcmu0aw9Pnea3rTdQqKusF"
 )
 
-rsconnect::deployApp(appFiles = c("app.R", "data"))
+rsconnect::deployApp(appFiles = c("app.R", "data"), forceUpdate = TRUE)
