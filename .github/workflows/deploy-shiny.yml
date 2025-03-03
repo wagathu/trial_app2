@@ -17,10 +17,10 @@ jobs:
         run: docker build -t main .
 
       - name: Run Docker Container & Deploy App
-        run: >
-          docker run 
-          -e SHINY_ACC_NAME='wagathu'
-          -e TOKEN=${{ secrets.TOKEN }}
-          -e SECRET=${{ secrets.SECRET }}
-          -e APP_NAME='trial_app2'  # Ensure the correct app name is passed
+        run: |
+          docker run \
+          -e SHINY_ACC_NAME='wagathu' \
+          -e TOKEN=${{ secrets.TOKEN }} \
+          -e SECRET=${{ secrets.SECRET }} \
+          -e APP_NAME='trial_app2' \
           main
