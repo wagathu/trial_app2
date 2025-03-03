@@ -10,6 +10,7 @@ pacman::p_load(
 
 # Importing packages ------------------------------------------------------
 
-url <- "https://docs.google.com/spreadsheets/d/1grVW04UUk-O73s-3Qs3DUV4MnF1RFNvlhyd_XIfXbQ4/edit#gid=0"
+gs4_auth(path = Sys.getenv("GOOGLE_SHEETS_KEY"))
+url <- "https://docs.google.com/spreadsheets/d/1F6ND2aDM2PCHADnKDcuUqEPMNKYO0BZsOD8EH9-q-EM/edit?gid=0#gid=0"
 df <- read_sheet(url)
-fwrite(data, "data/dd.csv")
+fwrite(df, "data/dd.csv")
