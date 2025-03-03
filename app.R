@@ -1,5 +1,5 @@
 
-library(shiny)
+source("global.R")
 gs4_auth(email = "brian.njuguna@cema.africa", cache = ".secrets")
 ui <- fluidPage(
     fluidRow(
