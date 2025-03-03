@@ -9,7 +9,6 @@ pacman::p_load(
   data.table
 )
 
-
 # Importing data ----------------------------------------------------------
 
 data <- fread("data/dd.csv")

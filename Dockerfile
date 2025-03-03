@@ -4,4 +4,5 @@ WORKDIR /home/trial_app2
 COPY app.R app.R 
 COPY data data
 COPY deploy.R deploy.R
+COPY global.R global.R
 CMD Rscript deploy.R

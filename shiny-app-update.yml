@@ -31,4 +31,6 @@ jobs:
           git add --all
           git commit -m "add data"
           git push           
+        continue-on-error: true 
+
           
