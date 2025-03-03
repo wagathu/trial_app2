@@ -4,7 +4,6 @@
 pacman::p_load(
   dplyr,
   highcharter,
-  googlesheets4,
   shiny,
   data.table
 )
