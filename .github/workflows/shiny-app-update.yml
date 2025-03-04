@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      GOOGLE_SHEETS_KEY: ${{ secrets.GOOGLE_SHEETS_KEY }}
-
+      
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -28,7 +27,7 @@ jobs:
           
       - name: Install R Dependencies
         run: |
-          R -e 'install.packages(c("pacman", "gargle", "httr", "googledrive", "jsonlite" ,"data.table", "dplyr", "googlesheets4", "stringr", "lubridate"), repos="https://cloud.r-project.org")'
+          R -e 'install.packages(c("pacman", "gargle", "httr","stringr", "googledrive", "jsonlite" ,"data.table", "dplyr", "googlesheets4", "stringr", "lubridate"), repos="https://cloud.r-project.org")'
 
       - name: Run Data Update Script
         run: |
