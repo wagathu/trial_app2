@@ -28,7 +28,7 @@ jobs:
           
       - name: Install R Dependencies
         run: |
-          R -e 'install.packages(c("pacman", "gargle", "httr", "googledrive", "data.table", "dplyr", "googlesheets4", "stringr", "lubridate"), repos="https://cloud.r-project.org")'
+          R -e 'install.packages(c("pacman", "gargle", "httr", "googledrive", "jsonlite" ,"data.table", "dplyr", "googlesheets4", "stringr", "lubridate"), repos="https://cloud.r-project.org")'
 
       - name: Run Data Update Script
         run: |
