@@ -13,14 +13,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Build Docker Image
-        run: docker build -t main .
-
-      - name: Run Docker Container & Deploy App
+      - name: Install system dependencies
         run: |
-          docker run \
-          -e SHINY_ACC_NAME='wagathu' \
-          -e TOKEN=${{ secrets.TOKEN }} \
-          -e SECRET=${{ secrets.SECRET }} \
-          -e APP_NAME='trial_app2' \
-          main
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4.3'  # Use the latest stable R version
+
+      - name: Install R dependencies
+        run: |
+          R -e 'install.packages(c("shiny", "rsconnect"))'
+
+      - name: Deploy to shinyapps.io
+        env:
+          SHINY_ACC_NAME: "wagathu"
+          APP_NAME: "trial_app2"
+          TOKEN: ${{ secrets.TOKEN }}
+          SECRET: ${{ secrets.SECRET }}
+        run: |
+          R -e 'rsconnect::setAccountInfo(name=Sys.getenv("SHINY_ACC_NAME"), 
+              token=Sys.getenv("TOKEN"), 
+              secret=Sys.getenv("SECRET"))'
+          R -e 'rsconnect::deployApp(appDir = ".", appName = Sys.getenv("APP_NAME"))'
