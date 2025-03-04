@@ -12,7 +12,7 @@ pacman::p_load(
 
 # google-drive
 gs4_auth(email = "briannjuguna133@gmail.com", cache = ".secrets")
-
+gs4_deauth()
 url <- "https://docs.google.com/spreadsheets/d/1rqkgsSAXkAy3eUfL5HKaDRP7VNa_5sBSgf2W_H6gdzY/edit?gid=0#gid=0"
 df <- read_sheet(url)
 fwrite(df, "data/dd.csv")
