@@ -25,7 +25,7 @@ jobs:
 
       - name: Install R dependencies
         run: |
-          R -e 'install.packages(c("shiny", "rsconnect"))'
+          R -e 'options(repos = c(CRAN = "https://cloud.r-project.org")); install.packages(c("shiny", "rsconnect"))'
 
       - name: Deploy to shinyapps.io
         env:
