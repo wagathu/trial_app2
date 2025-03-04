@@ -10,10 +10,10 @@ pacman::p_load(
 
 # Importing packages ------------------------------------------------------
 
-googlesheets4::gs4_auth(
-  cache = ".secrets",
-  email = "briannjuguna133@gmail.com"
-)
+# google-drive
+t <- gargle::credentials_service_account(Sys.getenv("GOOGLE_SHEETS_KEY"))
+googledrive::drive_auth(token = t)
+googlesheets4::gs4_auth(token = t)
 url <- "https://docs.google.com/spreadsheets/d/1rqkgsSAXkAy3eUfL5HKaDRP7VNa_5sBSgf2W_H6gdzY/edit?gid=0#gid=0"
 df <- read_sheet(url)
 fwrite(df, "data/dd.csv")
