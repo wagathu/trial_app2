@@ -4,9 +4,10 @@ username: wagathu
 account: wagathu
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 14147877
-bundleId: 9885069
+appId: 14150977
+bundleId: 9887492
 url: https://wagathu.shinyapps.io/trial_app2/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: .github/workflows/deploy-shiny.yml|.github/workflows/shiny-app-update.yml|.Rprofile|.secrets/7a6077d23f6776ccc63f8f70bc12b214_brian.njuguna@cema.africa|.secrets/c13dc354db9600c8cd9b2bd868d1bf25_brian.njuguna@cema.africa|Dockerfile
