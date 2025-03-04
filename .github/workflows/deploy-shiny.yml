@@ -26,7 +26,7 @@ jobs:
       - name: Install R dependencies
         run: |
           R -e 'options(repos = c(CRAN = "https://cloud.r-project.org")); install.packages(c("shiny", "rsconnect", "dplyr",
-          "highcharter" "data.table"))'
+          "highcharter", "data.table"))'
 
       - name: Deploy to shinyapps.io
         env:
