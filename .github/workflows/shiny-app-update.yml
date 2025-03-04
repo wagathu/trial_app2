@@ -19,7 +19,7 @@ jobs:
       - name: Install System Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev pkg-config
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
@@ -28,7 +28,7 @@ jobs:
           
       - name: Install R Dependencies
         run: |
-          R -e 'options(repos = c(CRAN = "https://cloud.r-project.org")); install.packages(c("pacman", "gargle", "httr", "googledrive", "data.table", "dplyr", "googlesheets4", "stringr", "lubridate"))'
+          R -e 'install.packages(c("pacman", "gargle", "httr", "googledrive", "data.table", "dplyr", "googlesheets4", "stringr", "lubridate"), repos="https://cloud.r-project.org")'
 
       - name: Run Data Update Script
         run: |
