@@ -22,12 +22,10 @@ jobs:
       - name: Install dependencies
         run: |
           R -e 'options(repos = c(CRAN = "https://cloud.r-project.org")); install.packages(c("pacman", "googledrive", "data.table", "dplyr", "googlesheets4", "stringr", "lubridate"))'
-        shell: Rscript {0}  
 
       - name: Update data
         run: |
           source("clean_data.R")          
-        shell: Rscript {0}
 
       - name: Commit files
         run: |
