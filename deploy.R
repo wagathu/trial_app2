@@ -5,4 +5,5 @@ rsconnect::setAccountInfo(
   secret = Sys.getenv("SECRET")
 )
 
-rsconnect::deployApp(appFiles = c("app.R", "global.R", "data"), forceUpdate = TRUE)
+rsconnect::deployApp(appFiles = c("app.R", "global.R", "data"),
+                     forceUpdate = TRUE)
