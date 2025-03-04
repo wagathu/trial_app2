@@ -1,3 +1,5 @@
+name: Update Data
+
 on:
   schedule:
     - cron: "*/5 * * * *"  # Runs every 5 minutes
@@ -17,25 +19,25 @@ jobs:
       - name: Install System Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libcurl4-openssl-dev
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
           
-      - name: Install dependencies
+      - name: Install R Dependencies
         run: |
-          R -e 'options(repos = c(CRAN = "https://cloud.r-project.org")); install.packages(c("pacman", "gargle" , "httr" , "googledrive", "data.table", "dplyr", "googlesheets4", "stringr", "lubridate"))'
+          R -e 'options(repos = c(CRAN = "https://cloud.r-project.org")); install.packages(c("pacman", "gargle", "httr", "googledrive", "data.table", "dplyr", "googlesheets4", "stringr", "lubridate"))'
 
       - name: Run Data Update Script
         run: |
           Rscript clean_data.R
           
-      - name: Commit files
+      - name: Commit & Push Files
         run: |
           git config --local user.email "briannjuguna133@gmail.com"
           git config --local user.name "wagathu"
           git add --all
-          git commit -m "Updated data from Google Sheets"
+          git commit -m "Updated data from Google Sheets" || echo "No changes to commit"
           git push

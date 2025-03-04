@@ -10,7 +10,7 @@ pacman::p_load(
 
 # Importing packages ------------------------------------------------------
 
-gs4_auth(
+googlesheets4::gs4_auth(
   cache = ".secrets",
   email = "briannjuguna133@gmail.com"
 )
