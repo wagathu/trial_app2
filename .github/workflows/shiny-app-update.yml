@@ -39,4 +39,4 @@ jobs:
           git config --local user.name "wagathu"
           git add --all
           git commit -m "Updated data from Google Sheets" || echo "No changes to commit"
-          git push
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/wagathu/trial_app2.git
