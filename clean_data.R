@@ -14,8 +14,9 @@ pacman::p_load(
 # Importing packages ------------------------------------------------------
 
 # Set your access token
-dropbox_token <- "sl.u.AFkK_Jpv1I4__Q4j_PMNMoqL4YLG1YXtdpi8aNoCNdKcqvVASs1d5gMhBflyR1Cv5APDrxSS6OJhd-R2C0YsVmq7xUUeqcJcj_UjioOhivx2BdHhMGDrcIvASzS0TkEBaefecfy11fYy9JhXvx1aWm6W9gL7PvtNWQ7t9VS_FZsmMWMRRe93i54d3sQ_8UL6Iv6gb5FOHZaPSlsSOg0J-thewQwq6qDe_0oyYFsdkOaewa3Anx8V1ux7YsxKlj0avXQh0-4xmut7l_Yxc0hsAqKt1PkIuM01kYZqfg9W_EHjx04zL95hg_Q4OyWILhU2X06qniBT4qdSszQbdawJhSyFoDPENb0RpzyHuF4t5QMyTGj1cJvhiKBknBMneBXPb13QjQ_HgOtCV7EYi0cex5D8JIb4fLOlSI91GzLDjaOYl4bdIR9KYA-jKR2eLjJvpbeRc18MvT42Pz2MvRs1fQptXNsl9xe_U-4JmHBSor8JCgcwOaT_Di6ur4gFTr51XcBaDwc0KLSORlibyenPk0hmb_LQYQ9Ej7qy9wqQ1vRxIEpv-ZhMsGMZJbiEEJfogv8KV5kd-fUdTWsTiFM-y3Gf4hdjUGfC8JLula2th44ewJg8Qhez4_I-mmDsjEsZ8lUZNnBShK6WGmd10lJKCh7OUu2p6fedBhHgQHEJzfY3ZcdppYlUNA9C6bybF8tZwVgQmK_tp_Iwsc0mgrMGuMwrx1CIb45u7uvlDTgjy2RQUNrhb0ugFk55vKX3TKDiXXiDjE_pMiMLGdloHVS0wMyZK1O1zeIMZmncu-R5_GwYOeeHP0HT6wRNWgXE_-2ur2s8wPtwBcS7rpZZktxNgOv1CZp6_yA2gUVEUd24UiRBH_FPfeXArqqMyVRev2rj9W7iNoo1Xp90cYF3m03sD8i4e98N1DRVzKn9aLTytlCABAzxAUmV5bjuBAU1VeCyFAjhkvFbi22DPfom92iWPEqAfIigkkFTJVa4SyRTvVJz5fTz9hYTIe1T3PNFcCt8YUPoUz4P02EMbBYtFGJ_LZWNzqMKM5U47wKlPW-Ed-cDZ7XcKTckcmuRvW7nds3CVVuMyusfZRZWOj_nvjoHLs7qMfeRDRfdW1YEq6fpZ0jLwmgs7J6303EbRMELK2fXUQlBgnjLr-wVT-HdEvqUNpoO_cqTtFVIFrMVgd9ZowwOiVfyy6G-LNV9TeFQ54QZsCjpA0oUloF2oPcgy_a5HEnsuWT39_zBbfd-_BGxl6HULtUHK4dibn4ysfegc7nX5BcqAZ4YLy8MoMoRmF9HnCOoipGDhkzFR8N195PMBbsBe8_RvoZEyNjel4Pkl1KQeQTdGv0dX8fZVzZOsOUfupe7NfC6tOc1Q5PYUyrQo-AhB6wqHE_5LYgi14zQBiQdrigovBWjZBboHDKYI-ReEh-mA0WNyuKzQ96sPA9bWZLszQ"
-# File path in your Dropbox (relative to the app folder)
+dropbox_token <- "sl.u.AFn3lPlPQAmaOdasThpASdawqAnINf-2qITSeDntsEA3-gDdx-4u7vgbGh7bV9dooEnLA-CCN1uKmna8A8FZK0y1umvZI9FZ5GuougkKKor1n3P5k2fNlzdkIbcwZhGGXOGXLajdA-Q9V1uuGTGkmH5ntdUiv2QLIaglnx5_m-118k15S_sY7Z0JarYlsrZLALXwpJwgfwhP2dWflf6k-Va_HzS287XUGu4xWIsZdcxQTCaR7d7ix4NpLpTt3xytiejFvcipjeGZIJ2pdly0NoayCIdOJsQ8mkRnkrb7_-3BjwiLFFULSwyOCCiGe-pujtEMEB2L4k44Nv_Qm_ONqWVqSIWqFBiwQJE6rJM6RNOIT1kvBOeoZwDL6EpvGr0VJL5RpDutcpu5c4w2rhFQkDoEe4aQdlZdpVpWtCCwkBOEm3AY-lrE29pNNi8_1oXVWPe6v9KcZ2z29r40d5bnNRnk_8gbvgwWiPeJQg8V4Zj-SUQgaMPbYgB0jdQyI5D9m-FIZjMEukn9-LF9mLCzgIC4-whSsFzJ6FKYcklq0qbPqwC5mQCvlzzA_sU-7JwLj3dE0wfzgPjQsDkSjpApSCsyZKnUlHbnVuKx6kSMEfaCkUtBeCEwhJc0AjKWkTH3Xz9PxpQh3T-jGFo6VybQI_p81vjjGnePDtaFcIun9xGlhXmrQq3318EglqCg4JDcXCPePgwuYpAu9n0jmeAUjdZ-HVWv7gNuSl_JimBhElc-4x5pLIqeLtOn4igVEl2oCG55HgQMkp79UrUz2OBEDPsLciXz_wpZsd-P0ba4gnuG1q1-Cp9O2SvGLQ0hfztZ-cdq8zRFbkovvWzPhYOKVyNgThwlvFbl_lrhC1wp1FRjcQye-2O0FyhAiI5JJs4bJYJ19dM59iHereuu897JLa1Rh9887OSUmErE4UhSpIffqpsB-7m6j7ZO_7NAWTIYUHx9UJvruA0Z-seCG2v9WDOpptfBtOlmB_u6I2dGQ9srH5DUpN-G-mdpVSlIHBr4YsCi99yRgAiqyEAhQR0rHz3NucSaieUn2-GMVprg7Nr0-kiC-rKy8xjzp0bh_eRMoAzIKUXziaAcS_QEggltfOWX3WokQpDEGkkuW58fGTwYedzgzKiI4r5y6NQuUnxTRpcNqSj4FC85QY6tlbdAAA_zkvuoLy9ygiUN4RccJOGJP9iOovQ2nd8AtagJveiaw3BVgUASJCOJM720RSI3cHgEXxcUSJEMeB0Kp3oGzXuGvu445hQQX1JL2lH40H8KPbdauLpysLoRIQXi_Ysn_pH4P11mGR4NbFLlDhp6kcD0NCZEAOh783_XIcMBMYKBLbokBa4kGIFhMgBr0zk61L6zXsdy1wiNExWzoNw1g2720F-7eeQqIiwYGj8lxp_X4kFD-FPhYmNjpvmhhYGE1_EADqDZBjzHcXyl_W4GKYmhBA"
+
+# r Dropbox (relative to the app folder)
 file_path <- "/data/dd.csv"
 
 # Dropbox API endpoint
@@ -35,7 +36,7 @@ content_data <- content(response, "text", encoding = "UTF-8")
 df <- read.csv(text = content_data) |> 
   data.table() |> 
   _[, let(
-    date = stringr::str_extract(date, "\\d+\\-\\d+\\-\\d{2}") |> 
+    date2 = stringr::str_extract(date2, "\\d+\\-\\d+\\-\\d{2}") |> 
       lubridate::ydm()
   )]
 fwrite(df, "data/dd.csv", row.names = F)
