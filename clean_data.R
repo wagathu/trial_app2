@@ -14,8 +14,7 @@ pacman::p_load(
 # Importing packages ------------------------------------------------------
 
 # Set your access token
-dropbox_token <- "sl.u.AFn3lPlPQAmaOdasThpASdawqAnINf-2qITSeDntsEA3-gDdx-4u7vgbGh7bV9dooEnLA-CCN1uKmna8A8FZK0y1umvZI9FZ5GuougkKKor1n3P5k2fNlzdkIbcwZhGGXOGXLajdA-Q9V1uuGTGkmH5ntdUiv2QLIaglnx5_m-118k15S_sY7Z0JarYlsrZLALXwpJwgfwhP2dWflf6k-Va_HzS287XUGu4xWIsZdcxQTCaR7d7ix4NpLpTt3xytiejFvcipjeGZIJ2pdly0NoayCIdOJsQ8mkRnkrb7_-3BjwiLFFULSwyOCCiGe-pujtEMEB2L4k44Nv_Qm_ONqWVqSIWqFBiwQJE6rJM6RNOIT1kvBOeoZwDL6EpvGr0VJL5RpDutcpu5c4w2rhFQkDoEe4aQdlZdpVpWtCCwkBOEm3AY-lrE29pNNi8_1oXVWPe6v9KcZ2z29r40d5bnNRnk_8gbvgwWiPeJQg8V4Zj-SUQgaMPbYgB0jdQyI5D9m-FIZjMEukn9-LF9mLCzgIC4-whSsFzJ6FKYcklq0qbPqwC5mQCvlzzA_sU-7JwLj3dE0wfzgPjQsDkSjpApSCsyZKnUlHbnVuKx6kSMEfaCkUtBeCEwhJc0AjKWkTH3Xz9PxpQh3T-jGFo6VybQI_p81vjjGnePDtaFcIun9xGlhXmrQq3318EglqCg4JDcXCPePgwuYpAu9n0jmeAUjdZ-HVWv7gNuSl_JimBhElc-4x5pLIqeLtOn4igVEl2oCG55HgQMkp79UrUz2OBEDPsLciXz_wpZsd-P0ba4gnuG1q1-Cp9O2SvGLQ0hfztZ-cdq8zRFbkovvWzPhYOKVyNgThwlvFbl_lrhC1wp1FRjcQye-2O0FyhAiI5JJs4bJYJ19dM59iHereuu897JLa1Rh9887OSUmErE4UhSpIffqpsB-7m6j7ZO_7NAWTIYUHx9UJvruA0Z-seCG2v9WDOpptfBtOlmB_u6I2dGQ9srH5DUpN-G-mdpVSlIHBr4YsCi99yRgAiqyEAhQR0rHz3NucSaieUn2-GMVprg7Nr0-kiC-rKy8xjzp0bh_eRMoAzIKUXziaAcS_QEggltfOWX3WokQpDEGkkuW58fGTwYedzgzKiI4r5y6NQuUnxTRpcNqSj4FC85QY6tlbdAAA_zkvuoLy9ygiUN4RccJOGJP9iOovQ2nd8AtagJveiaw3BVgUASJCOJM720RSI3cHgEXxcUSJEMeB0Kp3oGzXuGvu445hQQX1JL2lH40H8KPbdauLpysLoRIQXi_Ysn_pH4P11mGR4NbFLlDhp6kcD0NCZEAOh783_XIcMBMYKBLbokBa4kGIFhMgBr0zk61L6zXsdy1wiNExWzoNw1g2720F-7eeQqIiwYGj8lxp_X4kFD-FPhYmNjpvmhhYGE1_EADqDZBjzHcXyl_W4GKYmhBA"
-
+dropbox_token <- "sl.u.AFlXUvsMKPp7aXlKbKicULHLGCXooZZlqCGZCHVh-rYdKuTIy5_6lqZ53cB1wnZafLiNFvuqAqgLUA9OgUZhaCREuRjfHHQlFkpXRnqwCK-VjID5OJJt-_1gBsmUR0TQQzSQM1zp8yn1e8OqzkUfXYee8TpjGXOOOXOYwTnKT0gdebOvjgeKnv3g5wlJeFB0bCANo73MAgKzwfk7PqztZ3VERRW3c87N7spYCh5he2EzmpvmczVktx96UcY4EXiduQhGPnF4G8-WcCxN7cZxUyhO-bInXXfHr3PSUBpWaC-T58PU5ysN8d-GppHXRF2mmj1bXEgqfbQfMmIqyRE3k4QuKHCJDQuZoRg60S3IkqMOWVI1gaza8MZr-xJRp8L2eQf-ZUaHqoNji3NMhLW5otk8lzqjknfU01jEMJTjzv71xEnQ-FttBsf-wrn-62Yn4vlpEQLSTa36VjfpwtrPn_VFA0W7wx7P9zOZ0R4MNiFNYJ4s0feG8l4HQsWzpl7J5w879oUfFGhvYy9hCkss8C2LgGloIARz0wWZu6_fIP1h3f0Rqzsm_2HLIWHY1wiR1jeA60vNJfWyZebmGJlA2g0WjuT5A4vxc6pAuCwgynRJ6ksuIeA6qc2adr-N_EsmmAjovP5cyqZ-QW5FeUFpDDpgQZL2JdiysXaDMbawHfgfL-QfO8qG7E5nXnErBEkw3a9A18LlvHGVSESKhZDEt7tZrKgWux0LBaZtfKl2MlhluWTrxbrhy6f7QxXfpNwKtPE1IORkSO-WJr5IgfamqnRaz0192InSuvpQ9O5OiWwMPvORq4Acz_IDbCdLkgodCvBtlD3A0dQpPZPhlS2MFIJFD9t5ITe7RHHTGGN6qRPNE-qMPk514mduMWH-2zO35X9MjyQXHuwbOgRZNDzkyTMPizlsR5V0EkO8DJH-McTvGACxlOb1aqq2_M77yN_FQ20fHNI4j61975Y3CivIAx_EelSpYUqPQR6b-JInodp--sm2X-n0uv5P7qNeIc3rWHw7Mgpopl2GB7I6AnDlkwTfpeWczxeNQozV28RR8NLrfng_WEU771OrlPsZAwg37oRkGy5jxEkGtjLOV_RNOi-prFlJk4_ikKIRHWMpHp_kEUPmjqHNCic_uah9j8tsGpuFhpAVNa-vjEGH7BXpMb4hXXC4QQMr0tXPvthOsd-NBozzxw0I-aD0bUZgnou9QoJFyt3AGKMdJsC4AtpYEnR_A9AUNIWMgtPllhyzE2bisXOanOj4oJvxspkBmxwaRQX3IoNEQP7dbL0crHOT3CDma9N52RK7yVYlmtKYyVQ_WeiamUJP_2HDBhVZDXz5Qs2z2qn6EFwXMvBl7_qAOxkspTn-V7io_0VpRCZxi2FVxNz0GWg9SuyJA3iE4eNtgj9GrBWGXtxmQGPPxRGjXVT-Sgmv5iBje6Jw0_dKB2WH9g"
 file_path <- "/data/dd.csv"
 
 # Dropbox API endpoint
@@ -35,7 +34,7 @@ content_data <- content(response, "text", encoding = "UTF-8")
 df <- read.csv(text = content_data) |> 
   data.table() |> 
   _[, let(
-    date2 = stringr::str_extract(date2, "\\d+\\-\\d+\\-\\d{2}") |> 
+    date = stringr::str_extract(date2, "\\d+\\-\\d+\\-\\d{2}") |> 
       lubridate::ydm()
   )]
 fwrite(df, "data/dd.csv", row.names = F)
