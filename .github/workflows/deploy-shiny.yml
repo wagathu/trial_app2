@@ -4,6 +4,7 @@ on:
   push:
     branches: [ main, master ]
   workflow_dispatch:
+  repository_dispatch:
 
 jobs:
   build:
@@ -34,10 +35,8 @@ jobs:
           APP_NAME: "trial_app2"
           TOKEN: ${{ secrets.TOKEN }}
           SECRET: ${{ secrets.SECRET }}
-      - name: Commit & Push Files
         run: |
-          git config --local user.email "briannjuguna133@gmail.com"
-          git config --local user.name "wagathu"
-          git add --all
-          git commit -m "Updated data from Google Sheets" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/wagathu/trial_app2.git
+          R -e 'rsconnect::setAccountInfo(name=Sys.getenv("SHINY_ACC_NAME"), 
+              token=Sys.getenv("TOKEN"), 
+              secret=Sys.getenv("SECRET"))'
+          R -e 'rsconnect::deployApp(appDir = ".", appName = Sys.getenv("APP_NAME"), forceUpdate = TRUE)'
